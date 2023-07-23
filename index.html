@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <title>Welcome</title>
-        <h1>Welcome to my website!</h1>
-            <h2 title="This is a work in progress ͡° ͜ʖ ͡°">Take a look around</h2>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Contini</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>James Contini</h1>
+    <nav>
+      <ul>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#photos">Full Projects</a></li>
+        <li><a href="#random">Random Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="photos">
+        <!-- Your photos content goes here -->
+        <h2>Project Media</h2><section id="rocket">
+            <h2 class="project_names" >Rocket and Parachute<span class="project-date"> AUG 2019 - JAN 2020  </span></h2>
+            <div class="gallery">
+              <div class="photo">
+                <img src="rocket_project/rocket beginning.jpeg" alt="Rocket 1">
+                <p class="caption">Preliminary designs</p>
+              </div>
+              <div class="photo">
+                <img src="rocket_project/end rocket 2 .jpeg" alt="Rocket 2">
+                <p class="caption">Our rocket AKA "<i>La Churger</i>" is completed</p>
+              </div>
+              <div class="photo">
+                <video width="540" height="720" controls>
+                    <source src="rocket_project/end rocket.mp4" type="video/mp4">
+                    <!-- You can provide additional video formats for compatibility with different browsers -->
+                    <!-- Example: -->
+                    <!-- <source src="path/to/your/video.webm" type="video/webm"> -->
+                    <!-- <source src="path/to/your/video.ogv" type="video/ogg"> -->
+                    Your browser does not support the video tag.
+                  </video>                
+                <p class="caption">Launch day happens, our rocket wins :D</p>
+              </div>
+              <!-- Add three more photos with captions for the rocket project -->
+              <!-- Example: -->
+              <!-- <div class="photo">
+                <img src="rocket_project/rocket3.jpg" alt="Rocket 3">
+                <p class="caption">Caption for Rocket Photo 3</p>
+              </div> -->
+            </div>
+          </section>
+      
+          <section id="autonomous_robot">
+            <h2 class="project_names">Autonomous Robot <span class="project-date"> AUG 2020 - JAN 2021  </span></h2>
+            <div class="gallery">
+                <div class="photo">
+                    <video width="540" height="720" controls>
+                        <source src="autonomous_robot_project/mid begin robot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>                
+                    <p class="caption">Testing turning algorithm</p>
+                    </div>
+
+                    <div class="photo">
+                        <img src="autonomous_robot_project/mid robot 2.jpeg" alt="Rocket 2">
+                        <p class="caption">Who needs a breadboard when you can make this?</p>
+                    </div>
+                <div class="photo">
+                    <video width="540" height="720" controls>
+                        <source src="autonomous_robot_project/last robot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>                
+                    <p class="caption">First successful turn</p>
+                    </div>
+
+                  </div>
+                  
+            </div>
+          </section>
+      
+          <section id="heliostat">
+            <h2 class="project_names">Heliostat Project <span class="project-date"> JAN 2021 - JUN 2021  </span></h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="heliostat_project/beginning heliostat.jpeg" alt="Rocket 1">
+                    <p class="caption">Fusion 360 design</p>
+                  </div>
+
+                  <div class="photo">
+                    <video width="540" height="720" controls>
+                        <source src="heliostat_project/mid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>                
+                    <p class="caption">Testing the azimuth servo</p>
+                  </div>
+
+                <div class="photo">
+                    <img src="heliostat_project/end.jpeg" alt="Rocket 2">
+                    <p class="caption">Finished product suspension and all!</p>
+                  </div>
+            </div>
+          </section>
+      </section>
+
+    <section id="github">
+      <h2>GitHub</h2>
+      <a href="https://github.com/XXjcontiniXX">My Github.</a>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <object data = "Resume.pdf" 
+          width="1200"
+          height="1000"> 
+        </object>
+      </section>
+
+      <section id="random"> 
+        <h2>Cool Random Stuff</h2>
+        <div class="gallery">
+        <div class="photo">
+            <img src="random/tooth thing.JPG" alt="tooth">
+            <p class="caption">Testing my CAD skills</p>
+        </div>
+        <div class="photo">
+            <video width="540" height="720" controls>
+                <source src="random/suspension hack.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>                
+            <p class="caption">Nylon suspension fixes everything</p>
+        </div>
+        <div class="photo">
+            <img src="random/success alas.jpeg" alt="tooth">
+            <p class="caption">Success alas.</p>
+        </div>
+
+</div>
+      </section>
+  </main>
+
+  <footer>
+    <p>© 2023 James Contini. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
