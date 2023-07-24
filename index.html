@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>James Contini</h1>
     <nav>
       <ul>
@@ -18,11 +18,19 @@
         <li><a href="#random">Random Media</a></li>
       </ul>
     </nav>
+
   </header>
 
   <main>
-    <section id="photos">
-        <h2>Project Media</h2><section id="rocket">
+    <section id="introduction">
+      <div class="intro-content">
+        <h2>Welcome</h2>
+        <p>Hello, I'm James Contini, a Computer Science enthusiast with a passion for robotics and technology. This website showcases my projects, skills, and experiences in the field. Take a look around and get to know me better!</p>
+        <a href="#photos" class="btn">Explore Projects</a>
+      </div>
+    </section>
+
+    <section id="photos">  
             <h2 class="project_names" >Rocket and Parachute<span class="project-date"> AUG 2019 - JAN 2020  </span></h2>
             <div class="gallery">
               <div class="photo">
@@ -110,7 +118,7 @@
       </section>
 
       <section id="random"> 
-        <h2 class="project_names">Cool Random Stuff</h2>
+        <h2 class="project_names">More</h2>
         <div class="gallery">
         <div class="photo">
             <img src="random/tooth thing.JPG" alt="tooth">
@@ -127,6 +135,14 @@
             <img src="random/success alas.jpeg" alt="tooth">
             <p class="caption">Success alas.</p>
         </div>
+        <div class="photo">
+          <img src="random/school_record.jpeg" alt="tooth">
+          <p class="caption">Snapshot of my 10.88 100m</p>
+      </div>
+      <div class="photo">
+        <img src="random/guitar.jpg" alt="tooth">
+        <p class="caption">My guitar and I</p>
+    </div>
 
 </div>
       </section>

@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #525a8f;
+    /*background: linear-gradient(#525a8f, #1a237e);*/
   }
   
   header {
@@ -52,11 +54,14 @@ body {
   }
   
   .photo {
+    display: flex;
     width: 30%;
     margin-bottom: 20px;
-    /*border: 1px solid #ccc; */
     padding: 5px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    
   }
   
   .photo img {
@@ -66,13 +71,167 @@ body {
   
   .photo .caption {
     text-align: center;
-    margin: 10px 0;
+    margin: 15px 0;
+  
+    color: #09041b; /* Set font color to a dark color */
+    font-weight: bold; /* Use normal font weight for a softer appearance */
+    border-radius: 5px; /* Add rounded corners */
   }
 
   .project_names {
     font-size: 40px;
+    padding: 4px 8px;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity for a milder effect */
+    color: #09041b; /* Set font color to a dark color */
+    font-weight: bold; /* Use normal font weight for a softer appearance */
+    border-radius: 5px; /* Add rounded corners */
   }
   .project-date{
     font-size: 25px;
-    color: darkslategray;
+    color: rgb(13, 8, 27);
+  }
+
+  #introduction {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .intro-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .intro-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  /* Add styles for smaller screens */
+  @media screen and (max-width: 1500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      margin-top: 20px;
+    }
+  
+    .project_names {
+      font-size: 28px;
+    }
+  
+    .project-date {
+      font-size: 18px;
+    }
+  
+    main {
+      padding: 20px;
+    }
+  
+    .gallery {
+      justify-content: center;
+    }
+  
+    .photo {
+      width: 90%;
+      flex-direction: column; /* Change to column for smaller screens */
+      align-items: center; /* Center the content horizontally */
+    }
+  
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .photo .caption {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  #introduction {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .intro-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .intro-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navigation styles */
+  .site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px; /* Add margin-bottom for spacing between header and introduction */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #fff;
   }
