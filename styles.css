@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #525a8f;
+    background: #c8cbe0;
     /*background: linear-gradient(#525a8f, #1a237e);*/
   }
   
@@ -82,7 +82,7 @@ body {
     font-size: 40px;
     padding: 4px 8px;
     background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity for a milder effect */
-    color: #09041b; /* Set font color to a dark color */
+    color: #000000; /* Set font color to a dark color */
     font-weight: bold; /* Use normal font weight for a softer appearance */
     border-radius: 5px; /* Add rounded corners */
   }
