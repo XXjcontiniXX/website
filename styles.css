@@ -1,45 +1,158 @@
+#intro_wrapper {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif, sans-serif;
+  font-size: large;
+  color: black;
+  background: white;
+  background: radial-gradient(#fff, #787878);
+}
+
+
+.block_wrapper {
+  min-height: 100vh;
+}
+
+#welcome_words {
+  animation: hello 4s forwards;
+}
+
+#about_me_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#787878, #fff, #787878);
+  border: 2px solid black; /* Add a 2px solid border with color #333 */
+  padding: 20px;
+}
+
+.photos{
+  flex-direction: row;
+}
+
+#who_am_I {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+#about_me_paragraph {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+
+#my_photo {
+  width: 200px; /* Adjust the width to your preference */
+  height: 200px; /* Adjust the height to your preference */
+  border-radius: 50%; /* This will make the image a perfect circle */
+  margin-bottom: 20px; /* Add some spacing between the image and the paragraph */
+  object-fit: cover; /* Make sure the entire image is visible in the circle */
+  object-position: center; /* Center the image within the circle */
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#what_I_do {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+#what_I_do_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid black; /* Add a 2px solid border with color #333 */
+  background: linear-gradient(to right, #787878, #fff, #787878);
+  
+}
+
+#what_I_do_paragraph{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+#experience {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+#experience_paragraph{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+
+#slug_sat{
+  width: 300px; /* Adjust the width to your preference */
+  height: 150px; /* Adjust the height to your preference */
+  margin-left: 20%;
+}
+#aet_logo {
+  width: 200px;
+  height: 210px;
+  margin-left: 30px;
+}
+
+
+@keyframes hello {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#welcome_links {
+  animation: hello_links 5s forwards;
+}
+
+@keyframes hello_links {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #c8cbe0;
-    /*background: linear-gradient(#525a8f, #1a237e);*/
+
   }
   
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
     text-align: center;
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    border-bottom: 2px solid #fff;
-  }
-  
-  main {
-    padding: 40px;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
   
   footer {
     background-color: #333;
@@ -47,191 +160,18 @@ body {
     padding: 10px;
     text-align: center;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   
-  .photo {
-    display: flex;
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 5px;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  .photo img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .photo .caption {
-    text-align: center;
-    margin: 15px 0;
-  
-    color: #09041b; /* Set font color to a dark color */
-    font-weight: bold; /* Use normal font weight for a softer appearance */
-    border-radius: 5px; /* Add rounded corners */
-  }
 
-  .project_names {
-    font-size: 40px;
-    padding: 4px 8px;
-    background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity for a milder effect */
-    color: #000000; /* Set font color to a dark color */
-    font-weight: bold; /* Use normal font weight for a softer appearance */
-    border-radius: 5px; /* Add rounded corners */
-  }
-  .project-date{
-    font-size: 25px;
-    color: rgb(13, 8, 27);
-  }
 
-  #introduction {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .intro-content {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .intro-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .intro-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.2s;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
   /* Add styles for smaller screens */
   @media screen and (max-width: 1500px) {
     header {
       flex-direction: column;
       align-items: center;
     }
-  
-    nav {
-      margin-top: 20px;
+    
+    body {
+      flex-direction: column;
+      align-items: center;
     }
-  
-    .project_names {
-      font-size: 28px;
-    }
-  
-    .project-date {
-      font-size: 18px;
-    }
-  
-    main {
-      padding: 20px;
-    }
-  
-    .gallery {
-      justify-content: center;
-    }
-  
-    .photo {
-      width: 90%;
-      flex-direction: column; /* Change to column for smaller screens */
-      align-items: center; /* Center the content horizontally */
-    }
-  
-    .photo img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .photo .caption {
-      text-align: center;
-      margin: 10px 0;
-    }
-  }
-  #introduction {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .intro-content {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .intro-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .intro-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.2s;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Navigation styles */
-  .site-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 40px; /* Add margin-bottom for spacing between header and introduction */
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav a:hover {
-    border-bottom: 2px solid #fff;
   }
