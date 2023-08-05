@@ -1,0 +1,177 @@
+#intro_wrapper {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif, sans-serif;
+  font-size: large;
+  color: black;
+  background: white;
+  background: radial-gradient(#fff, #787878);
+}
+
+
+.block_wrapper {
+  min-height: 100vh;
+}
+
+#welcome_words {
+  animation: hello 4s forwards;
+}
+
+#about_me_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#787878, #fff, #787878);
+  border: 2px solid black; /* Add a 2px solid border with color #333 */
+  padding: 20px;
+}
+
+.photos{
+  flex-direction: row;
+}
+
+#who_am_I {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+#about_me_paragraph {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+
+#my_photo {
+  width: 200px; /* Adjust the width to your preference */
+  height: 200px; /* Adjust the height to your preference */
+  border-radius: 50%; /* This will make the image a perfect circle */
+  margin-bottom: 20px; /* Add some spacing between the image and the paragraph */
+  object-fit: cover; /* Make sure the entire image is visible in the circle */
+  object-position: center; /* Center the image within the circle */
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#what_I_do {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+#what_I_do_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid black; /* Add a 2px solid border with color #333 */
+  background: linear-gradient(to right, #787878, #fff, #787878);
+  
+}
+
+#what_I_do_paragraph{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+#experience {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+#experience_paragraph{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: black;
+}
+
+#slug_sat{
+  width: 300px; /* Adjust the width to your preference */
+  height: 150px; /* Adjust the height to your preference */
+  margin-left: 20%;
+}
+#aet_logo {
+  width: 200px;
+  height: 210px;
+  margin-left: 30px;
+}
+
+
+@keyframes hello {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#welcome_links {
+  animation: hello_links 5s forwards;
+}
+
+@keyframes hello_links {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+
+  /* Add styles for smaller screens */
+  @media screen and (max-width: 1500px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    body {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

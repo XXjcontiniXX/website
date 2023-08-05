@@ -35,22 +35,139 @@
         <img src="icons/James.jpg" alt="Your_Photo" id="my_photo">
         <img src="icons/guitar.jpg" alt="Your_Photo" id="my_photo">
       </div>
-      <p id="about_me_paragraph">My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math." My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations <br><br> You can find some of my experiences <a href="#what_I_do_wrapper" class="links">Below</a>.</p>  
+      <p id="about_me_paragraph">My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math. My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations <br><br> You can find some of my experiences <a href="#what_I_do_wrapper" class="links">Below</a>.</p>  
     </div>
     
+
+
     <div class="block_wrapper" id="what_I_do_wrapper">
-      <p id="what_I_do">Implementations</p>
-      <p id="what_I_do_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu nisi ultricies, efficitur justo nec, tempus enim. Suspendisse potenti. Proin eget lectus id massa consequat euismod a eget turpis. Vestibulum varius tristique urna, eu interdum arcu pulvinar sit amet. Nulla facilisi. Nullam volutpat mi ac magna ultricies, ac elementum lorem fermentum. Vestibulum eu quam vel quam finibus luctus in a urna. Fusce ultrices risus eget libero dignissim, at bibendum elit fringilla. Cras tempor ligula vitae tortor sagittis, ac blandit ligula consectetur. Aliquam non velit vel nibh cursus dapibus ac nec arcu.</p>  
-      <img src="icons/James.jpg" alt="Your_Photo" id="my_photo">
+      
+      <div class="triangle">
+        <!-- Move this image upward -->
+        <div class="triangle__column">
+          <a href="#autonomous_robot" class="links"><img src="heliostat_project/robot.gif" alt="Image 1"></a>
+        </div>
+    
+        <!-- Move these images to the bottom corners -->
+        <div class="triangle__column triangle__bottom_left">
+          <a href="#heliostat" class="links"><img src="heliostat_project/spin.gif" alt="Image 2"></a>
+        </div>
+        <div class="triangle__column triangle__bottom_right">
+          <a href="#rocket" class="links"><img src="rocket_project/rocket.gif" alt="Image 3"></a>
+        </div>
+    
+        <div class="triangle__content">
+          <p id="what_I_do">Implementations</p>
+        </div>
+      </div>
     </div>
 
     <div class="block_wrapper" id="experience_wrapper">
       <p id="experience">Associations</p>
-      <p id="experience_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu nisi ultricies, efficitur justo nec, tempus enim. Suspendisse potenti. Proin eget lectus id massa consequat euismod a eget turpis. Vestibulum varius tristique urna, eu interdum arcu pulvinar sit amet. Nulla facilisi. Nullam volutpat mi ac magna ultricies, ac elementum lorem fermentum. Vestibulum eu quam vel quam finibus luctus in a urna. Fusce ultrices risus eget libero dignissim, at bibendum elit fringilla. Cras tempor ligula vitae tortor sagittis, ac blandit ligula consectetur. Aliquam non velit vel nibh cursus dapibus ac nec arcu.</p>  
-      <div class="photos">
-        <img src="icons/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat">
-        <img src="icons/cropped-aet_logo.png" alt="aet" id="aet_logo">
+      <p id="experience_paragraph">Throughout my academic journey, I've been fortunate to engage in impactful experiences that have shaped my passion for computer science and engineering. Working with SlugSat at UC Santa Cruz, I am actively involved in developing an On-Board Computer (OBC) for a satellite's distributed system, which has sparked my curiosity and determination to seek funding for its launch. Additionally, during high school, the Academy of Engineering and Physics provided a dynamic platform for collaborative projects, sharpening my problem-solving skills and fostering effective teamwork. These experiences have fueled my drive to make a meaningful impact through innovation and collaboration.
+      </p>  
+      <div class="association_photos">
+        <a href="https://slugsat.soe.ucsc.edu/home-page"><img src="icons/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat"></a>
+        <a href="https://aetsrhs.org/"><img src="icons/cropped-aet_logo.png" alt="aet" id="aet_logo"></a>
       </div>  
+    </div>
+
+    <div id="media_wrapper">
+      <p id="project_media">Project Media</p>
+
+
+      <section id="heliostat">
+        <h2 class="project_names">Heliostat Project <span class="project_date"> JAN 2021 - JUN 2021  </span></h2>
+        <div class="gallery">
+            <div class="photo">
+                <img src="heliostat_project/beginning heliostat.jpeg" alt="Rocket 1">
+                <p class="caption">Fusion 360 design</p>
+              </div>
+  
+              <div class="photo">
+                <video width="540" height="720" controls>
+                    <source src="heliostat_project/mid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>                
+                <p class="caption">Testing the azimuth servo</p>
+              </div>
+  
+            <div class="photo">
+                <img src="heliostat_project/end.jpeg" alt="Rocket 2">
+                <p class="caption"> Heliostat in working condition</p>
+              </div>
+        </div>
+      </section>
+  
+            <section id="autonomous_robot">
+              <h2 class="project_names">Autonomous Robot <span class="project_date"> AUG 2020 - JAN 2021  </span></h2>
+              <div class="gallery">
+                  <div class="photo">
+                      <video width="540" height="720" controls>
+                          <source src="autonomous_robot_project/mid begin robot.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>                
+                      <p class="caption">Testing turning algorithm</p>
+                      </div>
+  
+                      <div class="photo">
+                          <img src="autonomous_robot_project/mid robot 2.jpeg" alt="Rocket 2">
+                          <p class="caption">My first PCB</p>
+                      </div>
+                  <div class="photo">
+                      <video width="540" height="720" controls>
+                          <source src="autonomous_robot_project/last robot.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                          </video>                
+                      <p class="caption">First successful turn</p>
+                      </div>
+  
+                    </div>
+            </section>
+  
+            <section id="rocket">  
+              <h2 class="project_names" >Rocket and Parachute<span class="project_date"> AUG 2019 - JAN 2020  </span></h2>
+              <div class="gallery">
+                <div class="photo">
+                  <img src="rocket_project/rocket beginning.jpeg" alt="Rocket 1">
+                  <p class="caption">Preliminary designs</p>
+                </div>
+                <div class="photo">
+                  <img src="rocket_project/end rocket 2 .jpeg" alt="Rocket 2">
+                  <p class="caption">Our rocket AKA "<i>La Churger</i>" is completed</p>
+                </div>
+                <div class="photo">
+                  <video width="540" height="720" controls>
+                      <source src="rocket_project/end rocket.mp4" type="video/mp4">
+  
+                      Your browser does not support the video tag.
+                    </video>                
+                  <p class="caption">Launch day</p>
+                </div>
+              </div>
+            </section>
+  
+        <section id="random"> 
+          <h2 class="project_names">More</h2>
+          <div class="gallery">
+          <div class="photo">
+              <img src="random/tooth thing.JPG" alt="tooth">
+              <p class="caption">Testing my CAD skills</p>
+          </div>
+          <div class="photo">
+              <video width="540" height="720" controls>
+                  <source src="random/suspension hack.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>                
+              <p class="caption">Nylon suspension saves our mechnically unadvantageous design</p>
+          </div>
+          <div class="photo">
+              <img src="random/success alas.jpeg" alt="tooth">
+              <p class="caption">Victory photo</p>
+          </div>
+  
+  </div>
+        </section>
     </div>
 
 

@@ -32,25 +32,40 @@
     <div class="block_wrapper" id="about_me_wrapper">
       <p id="who_am_I">Hi there <i class="em em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i></p> 
       <div class="photos">  
-        <img src="./index_files/school_record.jpeg" alt="Your_Photo" id="my_photo">
-        <img src="./index_files/James.jpg" alt="Your_Photo" id="my_photo">
-        <img src="./index_files/guitar.jpg" alt="Your_Photo" id="my_photo">
+        <img src="icons/school_record.jpeg" alt="Your_Photo" id="my_photo">
+        <img src="icons/James.jpg" alt="Your_Photo" id="my_photo">
+        <img src="icons/guitar.jpg" alt="Your_Photo" id="my_photo">
       </div>
-      <p id="about_me_paragraph">Welcome. My name is James and I'm a software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math." My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations</p>  
+      <p id="about_me_paragraph">My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math." My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations <br><br> You can find some of my experiences <a href="#what_I_do_wrapper" class="links">Below</a>.</p>  
     </div>
     
     <div class="block_wrapper" id="what_I_do_wrapper">
-      <p id="what_I_do">What I like to do</p>
-      <p id="what_I_do_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu nisi ultricies, efficitur justo nec, tempus enim. Suspendisse potenti. Proin eget lectus id massa consequat euismod a eget turpis. Vestibulum varius tristique urna, eu interdum arcu pulvinar sit amet. Nulla facilisi. Nullam volutpat mi ac magna ultricies, ac elementum lorem fermentum. Vestibulum eu quam vel quam finibus luctus in a urna. Fusce ultrices risus eget libero dignissim, at bibendum elit fringilla. Cras tempor ligula vitae tortor sagittis, ac blandit ligula consectetur. Aliquam non velit vel nibh cursus dapibus ac nec arcu.</p>  
-      <img src="./index_files/James.jpg" alt="Your_Photo" id="my_photo">
+      
+      <div class="triangle">
+        <div class="triangle__column">
+          <img src="heliostat_project/robot.gif" alt="Image 1">
+        </div>
+        <div class="triangle__content">
+          <p id="what_I_do">Implementations</p>
+        </div>
+        <div class="triangle__column">
+          <img src="heliostat_project/spin.gif" alt="Image 3">
+
+        </div>
+        <div class="triangle__column">
+          <img src="icons/James.jpg" alt="Image 6">
+        </div>
+      </div>
+      </div>
+      
     </div>
 
     <div class="block_wrapper" id="experience_wrapper">
-      <p id="experience">Experiences</p>
+      <p id="experience">Associations</p>
       <p id="experience_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu nisi ultricies, efficitur justo nec, tempus enim. Suspendisse potenti. Proin eget lectus id massa consequat euismod a eget turpis. Vestibulum varius tristique urna, eu interdum arcu pulvinar sit amet. Nulla facilisi. Nullam volutpat mi ac magna ultricies, ac elementum lorem fermentum. Vestibulum eu quam vel quam finibus luctus in a urna. Fusce ultrices risus eget libero dignissim, at bibendum elit fringilla. Cras tempor ligula vitae tortor sagittis, ac blandit ligula consectetur. Aliquam non velit vel nibh cursus dapibus ac nec arcu.</p>  
       <div class="photos">
-        <img src="./index_files/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat">
-        <img src="./index_files/cropped-aet_logo.png" alt="aet" id="aet_logo">
+        <img src="icons/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat">
+        <img src="icons/cropped-aet_logo.png" alt="aet" id="aet_logo">
       </div>  
     </div>
 
@@ -86,6 +101,9 @@
   color: black;
   background: white;
   background: radial-gradient(#fff, #787878);
+  border: 1px solid black; 
+  border-left: none;
+  border-right: none;
 }
 
 
@@ -93,6 +111,9 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  border:  1px solid #09041b ;
+  border-left: none;
+  border-right: none;
 }
 
 #welcome_words {
@@ -104,7 +125,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black; /* Add a 2px solid border with color #333 */
   padding: 20px;
 }
 
@@ -153,26 +173,90 @@
   margin-right: 50px;
 }
 
-#what_I_do {
-  margin: 0;
-  padding: 5%;
-  text-align: center;
-  font-size: 300%;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-}
 
 #what_I_do_wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
   padding: 20px;
-  border: 2px solid black; /* Add a 2px solid border with color #333 */
   
 }
 
+#what_I_do {
+  margin-top: 400px;
+  padding: 5%;
+  text-align: center;
+  font-size: 250%;
+  color: rgb(75, 75, 75);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.triangle {
+  display: flex;
+  justify-content: center; /* Center the triangle */
+  width: 600px; /* Adjust the width of the triangle */
+  height: 480px; /* Adjust the height of the triangle */
+  position: relative;
+}
+
+.triangle img {
+  transition: .3s ease;
+}
+
+.triangle img:hover{
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+}
+
+.triangle__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the images in each column */
+}
+
+.triangle img {
+  width: 400px; /* Adjust the width of the images as needed */
+  height: 400px; /* Adjust the height of the images as needed */
+  border-radius: 50%;
+  border: 3px solid rgb(0, 89, 255);
+  z-index: 10;
+}
+
+.triangle__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust the width of the content area */
+  height: 100px; /* Adjust the height of the content area */
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center the content area horizontally */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Move this image upward */
+.triangle__column img:first-child {
+  margin-top: -500px; /* Adjust the margin to move it up */
+}
+
+/* Move these images to the bottom corners */
+.triangle__bottom_left {
+  position: absolute;
+  bottom: -200px;
+  left: -500px;
+}
+
+.triangle__bottom_right {
+  position: absolute;
+  bottom: -200px;
+  right: -500px;
+}
+
+/*
 #what_I_do_paragraph{
   text-align: center;
   font-size: 18px;
@@ -181,6 +265,8 @@
   padding-right: 20%;
   color: black;
 }
+*/
+
 #experience {
   margin: 0;
   padding: 5%;
@@ -199,15 +285,101 @@
   color: black;
 }
 
+.association_photos{
+  margin-top: 70px;
+  margin-right: -800px
+}
+
+.association_photos img {
+  transition: .3s ease;
+  border: 3px solid rgb(0, 89, 255);
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.association_photos img:hover{
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+}
+
 #slug_sat{
-  width: 300px; /* Adjust the width to your preference */
-  height: 150px; /* Adjust the height to your preference */
+  width: 450px; /* Adjust the width to your preference */
+  height: 225px; /* Adjust the height to your preference */
   margin-left: 20%;
 }
 #aet_logo {
-  width: 200px;
-  height: 210px;
+  width: 250px;
+  height: 225px;
   margin-left: 30px;
+}
+
+
+#media_wrapper{
+  margin: 0;
+  padding: 0;
+  border: 10px solid black;
+  border-left: none;
+  border-right: none;
+  color: rgb(54, 54, 54);
+}
+
+#project_media{
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-size: 300%;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo {
+  display: flex;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border: 2px solid rgb(75, 75, 75);
+
+}
+
+.photo .caption {
+  text-align: center;
+  margin: 15px 0;
+  color: #09041b; /* Set font color to a dark color */
+  font-weight: bold; /* Use normal font weight for a softer appearance */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+video{
+  border: 2px solid rgb(75, 75, 75);
+}
+
+.project_names{
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.project_date{
+  font-size: 20px;
 }
 
 
@@ -229,7 +401,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
 
@@ -261,3 +433,6 @@ body {
       align-items: center;
     }
   }
+
+
+
