@@ -1,91 +1,9 @@
-/*
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="“X-UA-Compatible”" content="“ie=edge”">
-  <title>James Contini</title>
-
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-</head>
-<body>
-  <header id="intro_wrapper">
-    
-    <div id="welcome_words">
-      <p id="name">James Contini</p>
-      <p id="title">Software Engineer</p>
-    </div>
-      
-
-    <div id="welcome_links">
-        <a href="https://github.com/XXjcontiniXX/"><img src="./index_files/github.svg" alt="github"></a>
-        <a href="https://www.instagram.com/cont1ni"><img src="./index_files/instagram.svg" alt="insta"></a>
-        <a href="https://www.youtube.com/@JcontiniTerrabite"> <img src="./index_files/youtube.svg" alt="youtube"></a>
-    </div> 
-      
-
-  
-  </header>
-
-  <main>
-
-    <div class="block_wrapper" id="about_me_wrapper">
-      <p id="who_am_I">Hi there <i class="em em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i></p> 
-      <div class="photos">  
-        <img src="icons/school_record.jpeg" alt="Your_Photo" id="my_photo">
-        <img src="icons/James.jpg" alt="Your_Photo" id="my_photo">
-        <img src="icons/guitar.jpg" alt="Your_Photo" id="my_photo">
-      </div>
-      <p id="about_me_paragraph">My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math." My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations <br><br> You can find some of my experiences <a href="#what_I_do_wrapper" class="links">Below</a>.</p>  
-    </div>
-    
-    <div class="block_wrapper" id="what_I_do_wrapper">
-      
-      <div class="triangle">
-        <div class="triangle__column">
-          <img src="heliostat_project/robot.gif" alt="Image 1">
-        </div>
-        <div class="triangle__content">
-          <p id="what_I_do">Implementations</p>
-        </div>
-        <div class="triangle__column">
-          <img src="heliostat_project/spin.gif" alt="Image 3">
-
-        </div>
-        <div class="triangle__column">
-          <img src="icons/James.jpg" alt="Image 6">
-        </div>
-      </div>
-      </div>
-      
-    </div>
-
-    <div class="block_wrapper" id="experience_wrapper">
-      <p id="experience">Associations</p>
-      <p id="experience_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu nisi ultricies, efficitur justo nec, tempus enim. Suspendisse potenti. Proin eget lectus id massa consequat euismod a eget turpis. Vestibulum varius tristique urna, eu interdum arcu pulvinar sit amet. Nulla facilisi. Nullam volutpat mi ac magna ultricies, ac elementum lorem fermentum. Vestibulum eu quam vel quam finibus luctus in a urna. Fusce ultrices risus eget libero dignissim, at bibendum elit fringilla. Cras tempor ligula vitae tortor sagittis, ac blandit ligula consectetur. Aliquam non velit vel nibh cursus dapibus ac nec arcu.</p>  
-      <div class="photos">
-        <img src="icons/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat">
-        <img src="icons/cropped-aet_logo.png" alt="aet" id="aet_logo">
-      </div>  
-    </div>
-
-
-
-  </main>
-
-  <footer>
-    <p>© 2023 James Contini. All rights reserved.</p>
-  </footer>
-
-  <script src="file:///C:/Users/James%20Contini/Desktop/Test_site/regarde/scripts.js"></script>
-
-
-
-
-
-</body></html>
-*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Slabo+27px&display=swap');
+
+main {
+  max-width: 100%; /* Set the maximum width to 100% of the viewport */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
 
 #intro_wrapper {
   min-height: 100vh; 
@@ -99,7 +17,6 @@
   font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif, sans-serif;
   font-size: large;
   color: black;
-  background: white;
   background: radial-gradient(#fff, #787878);
   border: 1px solid black; 
   border-left: none;
@@ -126,6 +43,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  
 }
 
 .photos{
@@ -180,7 +98,9 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  
+  /*background-image: url(random/honeycomb.png);
+  background-repeat: round;
+  */
 }
 
 #what_I_do {
@@ -191,6 +111,13 @@
   color: rgb(75, 75, 75);
   font-family: 'Courier New', Courier, monospace;
 }
+
+.background_images {
+  padding: 0;
+  margin: 0;
+  background-image: url(random/network.png);
+}
+
 
 .triangle {
   display: flex;
@@ -283,6 +210,8 @@
   padding-left: 20%;
   padding-right: 20%;
   color: black;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
 }
 
 .association_photos{
