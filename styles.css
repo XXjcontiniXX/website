@@ -1,43 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Slabo+27px&display=swap');
 
+*{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-image: url(./icons/J.jpg);
+}
+
 main {
   max-width: 100%; /* Set the maximum width to 100% of the viewport */
   overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-#intro_wrapper {
+
+#logo_img{
+  position: fixed;
+  height: 7%;
+  width: 7%;
+  top: 20px;
+  left: 20px;
+  object-fit: cover;
+  opacity: .75;
+  border: 2px solid rgb(75, 75, 75);;
+}
+
+#name {
+  padding: 0;
+  margin: 0;
+}
+
+#title {
+  padding: 0;
+  padding-bottom: .1rem;
+  margin: 0;
+}
+
+
+.navs {
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(75, 75, 75);
+  font-size: larger;
+  font-weight: bolder;
+  padding: 1%;
+}
+
+#top_right{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#bottom_left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom_right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+a:hover {
+  color: rgb(0,0,0);
+}
+
+#welcome_links {
+  opacity: 1;
+  top: 35%;
+}
+
+#welcome_links img:hover{
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+
+header {
   min-height: 100vh; 
   display: flex;
   flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
-  font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif, sans-serif;
-  font-size: large;
-  color: black;
-  background: radial-gradient(#fff, #787878);
-  border: 1px solid black; 
-  border-left: none;
-  border-right: none;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+  border-bottom:  1px solid #09041b;
 }
-
 
 .block_wrapper {
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  border:  1px solid #09041b ;
-  border-left: none;
-  border-right: none;
   display: flex;
+  border-bottom:  1px solid #09041b;
   flex-direction: column;
   align-items: center;
 }
 
-#welcome_words {
-  animation: hello 4s forwards;
+#intro_img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  opacity: .25;
+}
+
+#white_img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  opacity: .25;
+  object-fit: cover;
+}
+
+#start_img {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  z-index: -1;
+  opacity: .5;
+  
+}
+
+#about_img {
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  z-index: -1;
+  opacity: .25;
+  object-fit: cover;
+}
+
+
+
+#welcome_container{
+  margin: .5rem;
 }
 
 #about_me_wrapper {
@@ -45,7 +152,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   
 }
 
@@ -59,11 +165,11 @@ main {
 }
 
 #who_am_I {
-  margin: 0px;
-  padding: 5%;
+  margin-top: -25vh;
+  padding-bottom: 0;
   text-align: left;
   font-size: 300%;
-  color: rgb(63, 63, 63);
+  color: rgb(75, 75, 75);
   font-family: 'Courier New', Courier, monospace;
   
 }
@@ -100,10 +206,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  /*background-image: url(random/honeycomb.png);
-  background-repeat: round;
-  */
 }
 
 #what_I_do {
@@ -114,13 +216,6 @@ main {
   color: rgb(75, 75, 75);
   font-family: 'Courier New', Courier, monospace;
 }
-
-.background_images {
-  padding: 0;
-  margin: 0;
-  background-image: url(random/network.png);
-}
-
 
 .triangle {
   display: flex;
@@ -149,8 +244,8 @@ main {
 }
 
 .triangle img {
-  width: 50vh; /* Adjust the width of the images as needed */
-  height: 50vh; /* Adjust the height of the images as needed */
+  width: 47vh; /* Adjust the width of the images as needed */
+  height: 47vh; /* Adjust the height of the images as needed */
   border-radius: 50%;
   border: 3px solid rgb(0, 89, 255);
   z-index: 10;
@@ -171,7 +266,7 @@ main {
 
 /* Move this image upward */
 .triangle__column img:first-child {
-  margin-top: -150%; /* Adjust the margin to move it up */
+  margin-top: -140%; /* Adjust the margin to move it up */
 }
 
 /* Move these images to the bottom corners */
@@ -199,18 +294,17 @@ main {
 */
 
 #experience {
-  margin: 0;
-  padding: 5%;
+  padding-top: 7%;
   text-align: center;
   font-size: 300%;
   font-family: 'Courier New', Courier, monospace;
-  color: black;
+  color: rgb(75, 75, 75);
 }
 
 #experience_paragraph{
   text-align: center;
   font-size: 18px;
-  margin: 20px 0;
+  margin: 15px 0;
   padding-left: 20%;
   padding-right: 20%;
   color: black;
@@ -254,10 +348,10 @@ main {
 #media_wrapper{
   margin: 0;
   padding: 0;
-  border: 10px solid black;
   border-left: none;
   border-right: none;
   color: rgb(54, 54, 54);
+  background-image: url(./icons/wall.jpg);
 }
 
 #project_media{
@@ -267,6 +361,7 @@ main {
   font-size: 300%;
   font-family: 'Courier New', Courier, monospace;
   color: black;
+
 }
 
 section {
@@ -274,20 +369,29 @@ section {
 }
 
 .gallery {
+  flex-direction: column;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
 .photo {
   display: flex;
-  width: 30%;
+  width: auto;
+  height: auto;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 5vw;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   
 }
+
+video {
+  height: auto;
+  width: auto;
+}
+
 
 .photo img {
   width: 100%;
@@ -317,30 +421,6 @@ video{
   font-size: 20px;
 }
 
-
-@keyframes hello {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-#welcome_links {
-  animation: hello_links 5s forwards;
-}
-
-@keyframes hello_links {
-  0%   {opacity: 0;}
-  25%  {opacity: 0;}
-  50%  {opacity: 1;}
-  75%  {opacity: 1;}
-  100% {opacity: 1;}
-}
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-
-  }
   
   header {
     text-align: center;
@@ -360,25 +440,21 @@ body {
   @media screen and (max-width: 975px) {
     .photos{
       display: flex;
-      flex-direction: column;
+      flex-direction: column; 
       align-items: center;
+    }
+    
+    #white_keyboard_img {
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      z-index: -1;
+      opacity: .25;
     }
   }
 
-
-  @media screen and (max-width: 1200px) {
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-  .photo{
-    width: auto;
-    padding: 5vw;
-    height: auto;
-  }
-}
-
   @media screen and (max-width: 1500px) {
+    
     header {
       flex-direction: column;
       align-items: center;
@@ -399,7 +475,13 @@ body {
   }
 
   @media screen and (max-height: 500px) {
-    
+    #white_img {
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      z-index: -1;
+      opacity: .25;
+    }
     body {
       flex-direction: column;
       align-items: center;
@@ -443,6 +525,14 @@ body {
   }
 
   @media screen and (max-width: 800px) {
+    #white_img {
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      z-index: -1;
+      opacity: .25;
+    }
+
   .triangle {
     flex-direction: column;
     align-items: center;
