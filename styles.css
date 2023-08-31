@@ -44,7 +44,7 @@ main {
   text-decoration: none;
   font-family: 'Roboto Slab', serif;
   color: rgb(75, 75, 75);
-  font-size: larger;
+  font-size: 100%;
   font-weight: bolder;
   padding: 1%;
 }
@@ -113,7 +113,7 @@ header {
   opacity: .25;
 }
 
-#white_img {
+#keyboard_img {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -447,7 +447,7 @@ video{
     #white_keyboard_img {
       height: inherit;
       width: inherit;
-      position: absolute;
+      position: fixed;
       z-index: -1;
       opacity: .25;
     }
@@ -525,7 +525,14 @@ video{
   }
 
   @media screen and (max-width: 800px) {
-    #white_img {
+    #keyboard_img {
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      z-index: -1;
+      opacity: .25;
+    }
+    #intro_img {
       height: inherit;
       width: inherit;
       position: absolute;
