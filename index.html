@@ -2,202 +2,204 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="“X-UA-Compatible”" content="“ie=edge”">
-  <link rel="icon" type="image/jpg" href="icons/J.png"/>
+  <link rel="icon" type="image/jpg" href="images/J.png"/>
   <title>James Contini</title>
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <img src="./icons/start.jpg" alt="start_img" id="start_img">
+<script src="scripts.js"></script>
 
-    <a href="#about_me_wrapper" id="top_right" class="navs">About</a>
-    <a href="#what_I_do_wrapper"id="bottom_right" class="navs">Implementations</a>
-    <a href="#experience_wrapper" id="bottom_left" class="navs">Associations</a>
-    <a href="https://jamescontini.com"><img src="./icons/logo.gif" alt="intro_img" id="logo_img"></a>
+<section id="p1">
+  <div class="p1-content">
+    <img src="./images/skyscraper.jpg" class="background" id="main-background">
 
-
-  <div id="welcome_container">
-      <p id="name">James Contini</p>
-      <p id="title">Software Engineer</p>
-  </div>
-      
-
-    <div id="welcome_links">
-        <a href="https://github.com/XXjcontiniXX/"><img src="./index_files/github.svg" alt="github"></a>
-        <a href="https://www.instagram.com/cont1ni"><img src="./index_files/instagram.svg" alt="insta"></a>
-        <a href="https://www.youtube.com/@JcontiniTerrabite"> <img src="./index_files/youtube.svg" alt="youtube"></a>
-    </div> 
-  </div>
-
-  
-  </header>
-
-  <main>
-
-    <div class="block_wrapper" id="about_me_wrapper">
-      <img src="./icons/about.jpg" alt="about_img" id="about_img">
-      <p id="who_am_I">Hi there <i class="em em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i></p> 
-      <div class="photos">  
-        <img src="icons/school_record.jpeg" alt="Your_Photo" id="my_photo">
-        <img src="icons/James.jpg" alt="Your_Photo" id="my_photo">
-        <img src="icons/guitar.jpg" alt="Your_Photo" id="my_photo">
+    <div class="content-container">  
+      <p class="title littleblur" >James Contini<br>Software Engineer</p>
+      <div class="socials littleblur">
+        <a href="https://github.com/XXjcontiniXX/"><img src="./images/github.svg" alt="github"></a>
+        <a href="https://www.instagram.com/cont1ni"><img src="./images/instagram.svg" alt="insta"></a>
+        <a href="https://www.youtube.com/@JcontiniTerrabite"> <img src="./images/youtube.svg" alt="youtube"></a>
       </div>
-      <p id="about_me_paragraph">My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math. My aspiration is to embark on a fulfilling career that quenches my curiosity, enabling me to collaborate with talented engineers in crafting cutting-edge innovations.<br><br> Below are some technologies I've worked with.</p>  
-      <div id="skills_container">
-
-
-      </div>
-  
     </div>
+    <div class="nav-container">
+      <nav id="navbar">
+        <a href="https://jamescontini.com"><img src="./images/logo.gif" class="logo"></a>
+        <a href="#p1">Home</a>
+        <a href="#p2">About</a>
+        <a href="#p3">Involvments</a>
+        <a href="#p4">Integrations</a>
+      </nav>
+    </div>
+  </div>
+</section>
 
-    <div class="block_wrapper" id="what_I_do_wrapper">
-      <img src="./icons/keyboard_img.jpg" alt="keyboard_img" id="keyboard_img">
+<section id="p2">
+  <!-- <img src="./images/beige.jpg" class="background">    ////     <i class="em em-star2" aria-role="presentation" aria-label="GLOWING STAR"></i>-->
+  <div class="p2-content">
+   <div class="title">
+    <p>Information</p>
+   </div>
+   <div class="photos">
+    <img src="images/James.jpg" alt="James" id="James">
+   </div>
+   <div class="personal-statment">
+    <p>My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at the <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math.</p>
+   </div>
 
-      <div class="triangle">
-        <!-- Move this image upward -->
-        <div class="triangle__column">
-          <a href="#autonomous_robot" class="links"><img src="heliostat_project/robot.gif" alt="Image 1"></a>
-        </div>
+   <div class="outter-block">
     
-        <!-- Move these images to the bottom corners -->
-        <div class="triangle__column triangle__bottom_left">
-          <a href="#heliostat" class="links"><img src="heliostat_project/spin.gif" alt="Image 2"></a>
+    <div class="inner-block">
+      <div class="top-half"><img src="./images/pfp.jpg"><div class="sub-title"><p>INTERESTS</p></div></div>
+      <div class="bottom-half">
+        <div class="points1">
+          <p>Embedded systems of the IoT</p>
+          <p>Cross-disciplinary C.S. applications</p>          
         </div>
-
-        <div class="triangle__column triangle__bottom_right">
-          <a href="#rocket" class="links"><img src="rocket_project/rocket.gif" alt="Image 3"></a>
-        </div>
-    
-        <div class="triangle__content">
-          <p id="what_I_do">Implementations</p>
+        <div class="points2">
+          <p>Lab & field research</p> 
+          <p>Sociolinguistics</p>
+          <p>ML & A.I.</p>
+          <p>Sports Science</p>
         </div>
       </div>
     </div>
 
-    <div class="block_wrapper" id="experience_wrapper">
-      <img src="./icons/intro_img.jpg" alt="intro_img" id="intro_img">
-      <p id="experience">Associations</p>
-      <p id="experience_paragraph">Throughout my tech journey, I've engaged with SlugSat at UC Santa Cruz, where I've been exploring exciting opportunities to contribute to the development of an <a href="https://slugsat.soe.ucsc.edu/OBC" class="links">On-Board Computer (OBC)</a> for a satellite's distributed system. Additionally, the Academy of Engineering and Physics in high school was a transformative experience that honed my skills in embedded systems and instilled the value of teamwork. These formative experiences have inspired me to pursue innovative solutions and collaborative projects in the software industry.
-      </p>  
-      <div class="association_photos">
-        <a href="https://slugsat.soe.ucsc.edu/home-page"><img src="icons/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug_sat"></a>
-        <a href="https://aetsrhs.org/"><img src="icons/cropped-aet_logo.png" alt="aet" id="aet_logo"></a>
-      </div>  
-    </div>
-
-    <div id="media_wrapper">
-
-      <p id="project_media">Project Media</p>
-
-
-      <section id="heliostat">
-        <h2 class="project_names">Heliostat Project <span class="project_date"> JAN 2021 - JUN 2021  </span></h2>
-        <div class="gallery">
-            <div class="photo">
-                <img src="heliostat_project/beginning heliostat.jpeg" alt="Rocket 1">
-                <p class="caption">Fusion 360 design</p>
-              </div>
-  
-              <div class="photo">
-                <video width="540" height="720" controls>
-                    <source src="heliostat_project/mid.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>                
-                <p class="caption">Testing the azimuth servo</p>
-              </div>
-  
-            <div class="photo">
-                <img src="heliostat_project/end.jpeg" alt="Rocket 2">
-                <p class="caption"> Heliostat in working condition</p>
-              </div>
+    <div class="inner-block">
+      <div class="top-half-2"><img src="./images/tools.png"><div class="sub-title"><p>DEV TOOLS</p></div></div>
+      <div class="bottom-half">
+        <div class="points3">
+          <p>C, C++</p> 
+          <p>Bash</p>
+          <p>GMP Lib</p>
+          <p>Unix, Git</p>
         </div>
-      </section>
-  
-            <section id="autonomous_robot">
-              <h2 class="project_names">Autonomous Robot <span class="project_date"> AUG 2020 - JAN 2021  </span></h2>
-              <div class="gallery">
-                  <div class="photo">
-                      <video width="540" height="720" controls>
-                          <source src="autonomous_robot_project/mid begin robot.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                          </video>                
-                      <p class="caption">Testing turning algorithm</p>
-                      </div>
-  
-                      <div class="photo">
-                          <img src="autonomous_robot_project/mid robot 2.jpeg" alt="Rocket 2">
-                          <p class="caption">My first PCB</p>
-                      </div>
-                  <div class="photo">
-                      <video width="540" height="720" controls>
-                          <source src="autonomous_robot_project/last robot.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                          </video>                
-                      <p class="caption">First successful turn</p>
-                      </div>
-  
-                    </div>
-            </section>
-  
-            <section id="rocket">  
-              <h2 class="project_names" >Rocket and Parachute<span class="project_date"> AUG 2019 - JAN 2020  </span></h2>
-              <div class="gallery">
-                <div class="photo">
-                  <img src="rocket_project/rocket beginning.jpeg" alt="Rocket 1">
-                  <p class="caption">Preliminary designs</p>
-                </div>
-                <div class="photo">
-                  <img src="rocket_project/end rocket 2 .jpeg" alt="Rocket 2">
-                  <p class="caption">Our rocket AKA "<i>La Churger</i>" is completed</p>
-                </div>
-                <div class="photo">
-                  <video width="540" height="720" controls>
-                      <source src="rocket_project/end rocket.mp4" type="video/mp4">
-  
-                      Your browser does not support the video tag.
-                    </video>                
-                  <p class="caption">Launch day</p>
-                </div>
-              </div>
-            </section>
-  
-        <section id="random"> 
-          <h2 class="project_names">More</h2>
-          <div class="gallery">
-          <div class="photo">
-              <img src="random/tooth thing.JPG" alt="tooth">
-              <p class="caption">Testing my CAD skills</p>
-          </div>
-          <div class="photo">
-              <video width="540" height="720" controls>
-                  <source src="random/suspension hack.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>                
-              <p class="caption">Nylon suspension saves our mechnically unadvantageous design</p>
-          </div>
-          <div class="photo">
-              <img src="random/success alas.jpeg" alt="tooth">
-              <p class="caption">Victory photo</p>
-          </div>
-  
+        <div class="points3">
+          <p>RISC-V</p> 
+          <p>Python</p>
+          <p>JS HTML CSS</p>
+          <p>GS API</p>
+        </div>
+        <div class="points3">
+          <p>CAD Fusion360 </p> 
+          <p>System integration</p>
+          <p>Power tools</p>
+          <p>Power tools</p>
+        </div>
+      </div>
+    </div>
   </div>
-        </section>
+</section>
+
+
+
+<section id="p4"> <!-- Past -->
+  <div class="desc">
+    <p><i>Past works</i></p>
+  </div>
+  <div class="p4-content">
+    <div class="info">
+      <p>details</p>
+      <a href="https://aetsrhs.org/projects/"><img src="./images/cropped-aet_logo.png"></a>
     </div>
 
+    <div class="triangle">
+      <div class="triangle__column top">
+        <div class="title" id="robot-title">
+          <p>Robot</p>
+        </div>
+        <a href="#autonomous_robot"><img src="images/robot.gif" alt="robot"></a>
+      </div>
+
+      <div class="triangle__column left">
+        <div class="title" id="heliostat-title">
+          <p>Heliostat</p>
+        </div>  
+        <a href="#heliostat"><img src="images/heliostat.gif" alt="heliostat"></a>
+      </div>
+
+      <div class="triangle__column right">
+        <div class="title" id="rocket-title">
+          <p>Rocket</p>
+        </div>
+        <a href="#rocket" class="links"><img src="images/rocket.gif"></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="p3"> <!-- Current Involvments -->
+  <div class="p3-content">
+    <div class="main-title"><p>Involvments</p></div>
+    <div class="box box1">
+      <div class="media media1"><div class="img-container"><img src="./images/chassis.png"></div><p class="picture-caption">SlugSat Chassis Prototype 2023</p></div>
+      <div class="words">
+        <div class="under-title">SlugSat OBC Programmer</div>
+        <div class="blurb-caption">UCSC CubeSat Team</div>
+        <div class="blurb"><p>Engaged with SlugSat at UC Santa Cruz, where I've been exploring exciting opportunities to contribute to the development of an On-Board Computer (OBC) for a satellite's distributed system.</p></div>
+      </div>
+    </div>
+    <div class="box box2">
+      <div class="media media2"><div class="img-container"><img src="./images/SlugSecurity.png" id="security"></div><p class="picture-caption">SlugSecurity Logo</p></div>
+      <div class="words">
+        <div class="under-title">SlugSecurity</div>
+        <div class="blurb-caption">UCSC Computer Security Club</div>
+        <div class="blurb"><p>Engaged with SlugSat at UC Santa Cruz, where I've been exploring exciting opportunities to contribute to the development of an On-Board Computer (OBC) for a satellite's distributed system.</p></div>
+      </div>
+    </div>
+    <div class="box box3">
+      <div class="media media3"><div class="img-container"><img src="./images/running.jpeg" id="runners"></div><p class="picture-caption">Recording-breaking sprint!</p></div>
+      <div class="words">
+        <div class="under-title">Short Sprints and Long Jump</div>
+        <div class="blurb-caption">UCSC Men's Track and Field</div>
+        <div class="blurb"><p>Engaged with SlugSat at UC Santa Cruz, where I've been exploring exciting opportunities to contribute to the development of an On-Board Computer (OBC) for a satellite's distributed system.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="p6"> <!-- Video Archives -->
+
+</section>
 
 
-  </main>
+<!--
+<section id="p4">
+  <div class="p4-content">
+    <img src="./images/local_white.svg" class="background" id="secondary-background">
+    <div class="title">
+    <p>Associations</p>
+    </div>
+   <div class="personal-statment">
+    <p>Throughout my tech journey, I've engaged with SlugSat at UC Santa Cruz, where I've been exploring exciting opportunities to contribute to the development of an <a href="https://slugsat.soe.ucsc.edu/OBC" class="links">On-Board Computer (OBC)</a> for a satellite's distributed system. Additionally, the Academy of Engineering and Physics in high school was a transformative experience that honed my skills in embedded systems and instilled the value of teamwork. These formative experiences have inspired me to pursue innovative solutions and collaborative projects in the software industry.</p>
+  </div>
+   <div class="photos">
+    <a href="https://slugsat.soe.ucsc.edu/home-page"><img src="images/SlugSat Banner 6-01_0.jpg" alt="slug sat" id="slug"></a>
+    <a href="https://aetsrhs.org/"><img src="images/cropped-aet_logo.png" alt="aet" id="aet"></a>
+   </div>
+</section>
 
-  <footer>
-    <p>© 2023 James Contini. All rights reserved.</p>
-  </footer>
-
-  <script src="file:///C:/Users/James%20Contini/Desktop/Test_site/regarde/scripts.js"></script>
 
 
 
 
+<section id="p4">
+  <div class="p4-content">
+    <div class="contact">
+      <p>Contact</p>
+    </div>
+    <div class="resume">
+      <p>Resume</p>
+    </div>
+  </div>
+</section>
 
-</body></html>
+
+</body>
+</html>
+
+-->
