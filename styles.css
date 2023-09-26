@@ -13,6 +13,12 @@ body{
     background-image: url(./images/local_white.svg);
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
 }
 
 .active{
@@ -193,21 +199,14 @@ body{
     margin: 0;
 }*/
 
-#p2 .p2-content .title {
-    margin-top: 8vh;
-    margin-bottom: 1vh;
-    color: rgb(75, 75, 75);
-    font-family: var(--titles);
-    font-weight: bolder;
-    letter-spacing: .05vw;
-    font-size: 60px;
-    position: relative;
+
+
+#p2 .p2-content .title p {
+    margin: 10px;
+    margin-top: 50px;
 }
 
-#p2 .p2-content .photos{
-    flex-direction: row;
-    position: relative;
-  }
+
   
 #p2 .p2-content .photos img {
     border: 2px solid grey;
@@ -220,18 +219,23 @@ body{
     
   }
 
-  #p2 .p2-content .personal-statment{
-    color: rgb(75, 75, 75);
-    font-family: var(--body);
-    font-size: 20px;
-    width: 55vw;
-    position: relative;
 
-  }
   
   #p2 .p2-content .personal-statment a{
     text-decoration: none;
   }
+
+  #p2 .p2-content .title {
+    color: rgb(75, 75, 75);
+    font-family: var(--titles);
+    font-weight: bolder;
+    letter-spacing: .05vw;
+    font-size: 60px;
+    position: relative;
+    top: 40px;
+}
+
+  
 
   .outter-block{
     width: inherit;
@@ -241,8 +245,25 @@ body{
     flex-direction: row;
     justify-content: center;
     position: relative;
-    top: 3%;
+    top: 70px;
 }
+
+#p2 .p2-content .personal-statment{
+    color: rgb(75, 75, 75);
+    font-family: var(--body);
+    font-size: 20px;
+    width: 55vw;
+    position: relative;
+    top: 40px;
+
+  }
+
+
+  #p2 .p2-content .photos{
+    flex-direction: row;
+    position: relative;
+    top: 45px;
+  }
 
 
   .inner-block{
@@ -250,8 +271,8 @@ body{
     height: 310px;
     position: relative;
     background-color: #D9D9D9;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 65px;
+    margin-right: 65px
   }
 
   .top-half{
@@ -371,6 +392,13 @@ body{
     text-align: left;
     margin: 0px 20px 8px;
   }
+  .transition {
+    position: relative;
+    top: 110px;
+    font-size: 20px;
+    font-family: 'Lato';
+    color: rgb(75, 75, 75);
+  }
 
 
 /* PAGE 3
@@ -408,7 +436,7 @@ body{
 
 .words {
     left: 50px;
-    bottom: 10px;
+    bottom: 5px;
     width: 1375px;
     height: inherit;
     position: relative;
@@ -432,7 +460,7 @@ body{
 
 .blurb{ /*Also self explanatory*/
     width: 1000px;
-    height: 115px;
+    height: 80px;
     background-color: #D9D9D9;
     font-family: 'Open Sans';
     font-size: 15px;
@@ -443,8 +471,10 @@ body{
     margin: 0;
     padding: 0;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: left;
+    position: relative;
+    top: 6px;
 }
 
 .picture-caption { /*self explanatory*/
@@ -504,27 +534,6 @@ body{
     padding: 0;
     margin: 0;
 }
-
-#p4 .desc{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 7%;
-    margin-top: 5%;
-    background-color: rgba(255, 174, 0, 0.37);
-    width: auto;
-    border-radius: 10%;
-}
-
-
-#p4 .desc p {
-    font-family: var(--titles);
-    font-size: calc((4vh + 4vw) / 2);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    margin: 10px;
-}
-
 
 
 #p4 .p4-content {
@@ -603,7 +612,7 @@ body{
     width: calc( (40vh + 40vw) / 3 ); /* Adjust the width of the images as needed */
     height: calc((40vh + 40vw) / 3 ); /* Adjust the height of the images as needed */
     border-radius: 50%;
-    border: 3px solid rgba(255, 174, 0, 0.637);
+    border: 3px solid #c5c5c5;
     z-index: 10;
     transition: .3s ease;
 }
@@ -654,146 +663,48 @@ body{
 //
 // PAGE 4
 */
-/*
-#p4 {
-    height: 70vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
 
-#p4 .p4-content {
-    height: inherit;
-    width: inherit;
+#p6 {
+    width: 100vw;
+    height: 300px;
     position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
     text-align: center;
     align-items: center;
 }
 
-#p4 .p4-content .background {
-    height: inherit;
-    width: inherit;
-    position: absolute;
+.buttons {
+    display: flex;
+    height: 70px;
+    width: 200px;
     object-fit: cover;
-    padding: 0;
-    margin: 0;
-}
-
-#p4 .p4-content .title {
-    position: absolute;
-    font-family: var(--titles);
-    font-weight: bolder;
-    font-size: calc((3vh + 3vw) / 2);
-    margin: 5vh 10vw 0;
-}
-
-#p4 .p4-content .title p {
-    margin: 0;
-    padding: 0;
-}
-
-#p4 .p4-content .personal-statment p {
-    margin: 0;
-    padding: 0;
-}
-
-
-#p4 .p4-content .personal-statment {
-    position: absolute;
-    font-family: var(--body);
-    font-size: calc((1.3vh + 1.3vw) / 2);
-    margin: 15vh 25vw 0;
-}
-
-#p4 .p4-content .photos {
-    width: inherit;
-    height: calc( (35vh + 35vw) / 3 );
-    position: absolute;
-    margin: 31.5vh 0 0;
-}
-
-
-#p4 .p4-content .photos img {
-    width: calc( (35vh + 35vw) / 3 );
-    height: 100%;
-    border-radius: 50%;
-    border: 1px solid blue;
-    position: relative;
-    transition: .3s ease;
-    margin-top: 0;
-    margin-left: calc((1.3vh + 1.3vw) / 2);
-    margin-right: calc((1.3vh + 1.3vw) / 2);
-    margin-bottom: 0;
-}
-
-#p4 .p4-content .photos img:hover {
-  transform: scale(1.15);
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-}
-
-/* PAGE 5
-//
-////////////////////
-//
-// PAGE 5
-
-
-#p5 {
-    height: 50vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-}
-
-#p5 .p5-content {
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    display: flex;
-    flex-direction: horizontal;
+    margin-left: 65px;
+    margin-right: 65px;
     text-align: center;
     align-items: center;
-}
-
-#p5 .p5-content .contact {
-    display: block;
-    margin: auto;
-    margin-top:5%;
-    font-family: var(--body);
-    font-size: calc((2vh + 2vw) / 2);
-    border: 1px solid black;
-    height: calc((6vh + 6vw) / 2);
-    width: calc((12vh + 12vw) / 2);
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.445);
-    border-radius: 10%;
     position: relative;
-    text-align: center;
-}
-
-#p5 .p5-content .resume {
-    display: block;
-    margin: auto;
-    margin-top:5%;
+    justify-content: center;
     font-family: var(--body);
-    border: 1px solid black;
-    font-size: calc((2vh + 2vw) / 2);
-    height: calc((6vh + 6vw) / 2);
-    width: calc((12vh + 12vw) / 2);
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.445);
-    border-radius: 10%;
-    position: relative;
-    text-align: center;
+    font-size: 30px;
+    border: solid 1px black;
+    bottom: 10px;
 }
 
-#p5 .p5-content .contact p{
-
+.contact{
+    background-image: url(./images/beige.jpg);
 }
-#p5 .p5-content .resume p{
 
+.resume{
+    background-image: url(./images/beige.jpg);
 }
-*/
+
+.footer{
+    height: 25px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-image: url(./images/local_white.png);
+}

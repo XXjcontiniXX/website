@@ -15,7 +15,7 @@ function nav_opacity() {
         navbar.classList.add("inactive");
       }
 
-      if (scrollY >= height) {
+      if (scrollY >= height + 50) {
         background.src = "./images/local_white.svg";
         background.classList.add("fade");
         background.src = "./images/robot_hand.jpg";
