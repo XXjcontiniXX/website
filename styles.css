@@ -125,7 +125,6 @@ a{
     padding: 3rem 7.7vw 3rem 7.3vw;
     font-family: var(--titles);
     color: rgb(75, 75, 75);
-    font-weight: bolder;
     font-size: 25px;
     position: relative;
 }
@@ -155,7 +154,6 @@ a{
 #p1 .p1-content .content-container .title{
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
-    font-weight: bolder;
     margin: .5rem;
     position: relative;
 }
@@ -234,7 +232,6 @@ a{
   #p2 .p2-content .title {
     color: rgb(75, 75, 75);
     font-family: var(--titles);
-    font-weight: bolder;
     letter-spacing: .05vw;
     font-size: 60px;
     position: relative;
@@ -434,7 +431,6 @@ a{
 .main-title { /*Active Involvments*/
     color: rgb(75, 75, 75);
     font-family: var(--titles);
-    font-weight: bolder;
     letter-spacing: .05vw;
     font-size: 60px;
     position: relative;
@@ -695,23 +691,28 @@ a{
     justify-content: center;
     font-family: var(--body);
     font-size: 30px;
-    border: solid 1px black;
+    border: solid 1px rgb(109,109,109);
     bottom: 10px;
-}
-
-.contact{
-    background-image: url(./images/beige.jpg);
+    border-radius: 10px;
 }
 
 .resume{
-    background-image: url(./images/beige.jpg);
+    padding: 10px;
+    background-image: url(./images/white.jpg);
+}
+
+.resume a{
+    color: rgba(0, 0, 255, 0.665);
 }
 
 .footer{
     height: 25px;
     width: 100vw;
     position: absolute;
+    padding: 3px;
+    font-family: var(--body);
     bottom: 0;
+    border-top: solid 1px rgb(109, 109, 109);
     background-image: url(./images/local_white.png);
 }
 
