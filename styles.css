@@ -3,17 +3,21 @@
     --title-height: 85%;
     --body: 'Open Sans', 'serif';
     --titles: 'Roboto Slab', 'serif';
+    --bh: 1000px;
+    --bw: 1366px;
 }
 
 html{
     scroll-behavior: smooth;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
 }
 
 body{
     background-image: url(./images/local_white.svg);
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
 
 a{
@@ -33,7 +37,7 @@ a{
 }
 
 #p1 {
-    height: 100vh;
+    height: var(--bh);
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -102,6 +106,8 @@ a{
     top: 0;
     left: 0;
     z-index: 1;
+    width: 100vw;
+    height: 10vh;
 }
 
 #p1 .nav-container nav {
@@ -174,7 +180,7 @@ a{
 
 
 #p2 {
-    height: 100vh;
+    height: var(--bh);
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -252,7 +258,7 @@ a{
     color: rgb(75, 75, 75);
     font-family: var(--body);
     font-size: 20px;
-    width: 55vw;
+    width: 900px;
     position: relative;
     top: 40px;
 
@@ -408,7 +414,7 @@ a{
 // PAGE 3
 */
 #p3 {
-    height: 100vh;
+    height: var(--bh);
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -529,7 +535,7 @@ a{
 
 
 #p4 {
-    height: 100vh;
+    height: var(--bh);
     width: 100vw;
     padding: 0;
     margin: 0;
@@ -708,3 +714,36 @@ a{
     bottom: 0;
     background-image: url(./images/local_white.png);
 }
+
+
+@media screen and (max-width: 992px) {
+    #p1 .nav-container{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 10vh;
+    }
+    
+    #p1 .nav-container nav {
+        display: none;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #p1 .nav-container nav a{
+        text-decoration: none;
+        padding: 3rem 7.7vw 3rem 7.3vw;
+        font-family: var(--titles);
+        color: rgb(75, 75, 75);
+        font-weight: bolder;
+        font-size: 25px;
+        position: relative;
+    }
+  }
