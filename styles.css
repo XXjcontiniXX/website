@@ -20,6 +20,10 @@ body{
     margin: 0;
 }
 
+#p{
+    display: none;
+}
+
 a{
     text-decoration: none;
     color: blue;
@@ -746,5 +750,19 @@ a{
         font-weight: bolder;
         font-size: 25px;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #p{
+        font-family: var(--body);
+        left: 12px;
+        font-size: 20px;
+        position: relative;
+        display: block;
+    }
+    
+    section {
+        display: none;
     }
   }
