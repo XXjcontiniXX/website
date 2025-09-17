@@ -29,8 +29,8 @@
         <a href="https://jamescontini.com"><img src="./images/logo.gif" class="logo"></a>
         <a href="#p1">Home</a>
         <a href="#p2">About</a>
-        <a href="#p3">Involvements</a>
-        <a href="#p4">Integrations</a>
+        <a href="#p3">Projects</a>
+        <a href="#p4">Research</a>
       </nav>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <img src="images/James.jpg" alt="James" id="James">
    </div>
    <div class="personal-statment">
-    <p>My name is James Contini and I'm an aspiring software engineer with a passion for low level code especially in embedded systems. I'm currently a 3rd year student at <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a> pursuing a degree in <a href="https://engineering.ucsc.edu/departments/computer-science-and-engineering/" class="links">Computer Science</a> with a minor in Math.</p>
+    <p>My name is James Contini, I am an aspiring computer science researcher specializing in high-performance computing with over a year of experience in general-purpose GPU computing. I earned my B.S. in Computer Science with honors from <a href="https://www.ucsc.edu/" class="links">UC Santa Cruz</a>, where I completed an honors <a href="Thesis.pdf" download>thesis</a> on portable GPU kernel engineering strategies.</p>
    </div>
 
    <div class="outter-block">
@@ -55,14 +55,12 @@
       <div class="top-half"><img src="./images/pfp.jpg"><div class="sub-title"><p>INTERESTS</p></div></div>
       <div class="bottom-half">
         <div class="points1">
-          <p>Embedded systems of the IoT</p>
-          <p>Cross-disciplinary C.S. applications</p>          
+          <p>High Performance Computing</p>
+          <p>GPU Kernel Engineering</p>         
         </div>
         <div class="points2">
-          <p>Lab & field research</p> 
-          <p>Sociolinguistics</p>
-          <p>ML & A.I.</p>
-          <p>Sports Science</p>
+          <p>GPU Performance Portability</p>
+          <p>Bioinformatics</p>
         </div>
       </div>
     </div>
@@ -73,17 +71,16 @@
         <div class="points3">
           <p>C, C++</p> 
           <p>Bash</p>
-          <p>GMP Lib</p>
-          <p>Unix, Git</p>
+          <p>Unix Git</p>
+          <p>Vulkan, SPIR-V</p>
         </div>
         <div class="points3">
-          <p>RISC-V</p> 
-          <p>Python</p>
+          <p>OpenCL</p> 
+          <p>WebGPU</p>
           <p>JS HTML CSS</p>
-          <p>GS API</p>
+          <p>Python</p>
         </div>
         <div class="points3">
-          <p>PyCubed library</p> 
           <p>Fusion360 Suite</p>
           <p>CNC eqpt.</p>
           <p>S/W integration</p>
@@ -96,72 +93,56 @@
   </div>
 </section>
 
-
-
 <section id="p4"> <!-- Past -->
   <div class="p4-content">
-    <div class="info">
-      <p>details</p>
-      <a href="https://aetsrhs.org/projects/"><img src="./images/cropped-aet_logo.png"></a>
-    </div>
-
-    <div class="triangle">
-      <div class="triangle__column top">
-        <div class="title" id="robot-title">
-          <p>Robot</p>
-        </div>
-        <a href="https://drive.google.com/drive/folders/1mgQaw-4jSUqiz25RMfHyWHGWN7GCJNX2?usp=sharing"><img src="images/robot.gif" alt="robot"></a>
-      </div>
-
-      <div class="triangle__column left">
-        <div class="title" id="heliostat-title">
-          <p>Heliostat</p>
-        </div>  
-        <a href="https://drive.google.com/drive/folders/1mgQaw-4jSUqiz25RMfHyWHGWN7GCJNX2?usp=sharing"><img src="images/heliostat.gif" alt="heliostat"></a>
-      </div>
-
-      <div class="triangle__column right">
-        <div class="title" id="rocket-title">
-          <p>Rocket</p>
-        </div>
-        <a href="https://drive.google.com/drive/folders/1PIgO5uGMZa0rNUIy95S4qcBwpCnJaHOd?usp=share_link" class="links"><img src="images/rocket.gif"></a>
-      </div>
-    </div>
-
+    <div class="news-section">
+  <h2 class="news-title">News</h2>
+  <ul class="news-list">
+    <li class="news-item">
+      Jun 15, 2025: <a href="thesis.pdf">Undergraduate Thesis: ScanBox - A Tunable and Portable GPU Prefix Scan Implementation in Vulkan and WebGPU (pdf)</a>
+    </li>
+    <li class="news-item">
+      Oct 07, 2024: Identified and described a subgroupBarrier bug in NVIDIA's Vulkan implementation. The issue was rapidly acknowledged and patched in <a href="https://developer.nvidia.com/vulkan-driver">Windows 553.22 and Linux 550.40.76</a> with bug details found <a href="https://docs.google.com/presentation/d/1YopUaFB0UsXN6KuLdgy1ZUqkbI5sTXbknC2rH9_BN5o/edit?usp=sharing" clas="links">here</a>.
+    </li>
+  </ul>
+</div>
   </div>
 </section>
+
 
 <section id="p3"> <!-- Current Involvments -->
   <div class="p3-content">
-    <div class="main-title"><p>Involvments</p></div>
+    <div class="main-title"><p>Projects</p></div>
     <div class="box box1">
-      <div class="media media1"><div class="img-container"><img src="./images/chassis.png"></div><p class="picture-caption">SlugSat Chassis Prototype 2023</p></div>
+      <div class="media media1"><div class="img-container"><img src="./images/WebGPU_logo.png"></div><p class="picture-caption">WebGPU Logo</p></div>
       <div class="words">
-        <div class="under-title">SlugSat</div>
-        <div class="blurb-caption">UCSC CubeSat Team</div>
-        <div class="blurb"><p>Currently, I serve as the Secretary of UCSC's <a href="https://slugsat.soe.ucsc.edu/home-page">SlugSat</a>. SlugSat, is a collective of engineers, scientists and programmers, united by the common goal of sending a spacecraft into orbit. This year, we achieved a significant milestone by being the first class in our program’s eight year history to submit a launch proposal to NASA via CSLI. We are hopeful to launch next year.
-           </p></div>
+        <div class="under-title">WebGPU Kernel Engineering</div>
+        <div class="blurb-caption">Dec 2024 - Present</div>
+        <div class="blurb"><p>After implementing a performant prefix-sum in Vulkan, I extended the work to WebGPU by designing high-performance WGSL shaders inspired by my earlier OpenCL kernels. I refined these implementations through in-browser benchmarking, maximizing scan throughput while addressing the significant portability challenges inherent to WebGPU (<a href="https://github.com/XXjcontiniXX/webgpu-prefix-sum" class="links">github</a>). More details are available in my honors thesis.</p></div>
       </div>
     </div>
     <div class="box box2">
-      <div class="media media2"><div class="img-container"><img src="./images/SlugSecurity.png" id="security"></div><p class="picture-caption">SlugSecurity Logo</p></div>
+      <div class="media media2"><div class="img-container"><img src="./images/hillis-steele.png" id="security"></div><p class="picture-caption">Hillis-Steele Scan Visualization</p></div>
       <div class="words">
-        <div class="under-title">SlugSecurity</div>
-        <div class="blurb-caption">UCSC Computer Security Club</div>
-        <div class="blurb"><p>This year, I'm excited to join <a href="https://slugsec.ucsc.edu/">SlugSecurity</a> at UC Santa Cruz. In this club students explore programming through hacking. With a focus on competitive hacking, we host workshops, engaging talks, and thrilling competitions. I look forward to learning about identifying and preventing exploits, which will deepen my understanding of computer software security.</p></div>
+        <div class="under-title">Vulkan Prefix-scan</div>
+        <div class="blurb-caption">Mar 2024 - Dec 2024</div>
+        <div class="blurb"><p>Developed a Vulkan prefix-sum GPU kernel which achieves up to 43% higher throughput than Nvidia's proprietary implementation of prefix-scan (CUB) on small inputs. Additionally, achieves performance within 1% of Nvidia CUB on RTX 4070 and 1.5% on AMD 7900 XT, relative to device throughput limits at the largest input sizes <a href="https://github.com/reeselevine/vk-prefix-scan/tree/reduced-state" class="links">(github)</a>. More details can be found in my honors thesis.</p></div>
       </div>
     </div>
     <div class="box box3">
-      <div class="media media3"><div class="img-container"><img src="./images/running.jpeg" id="runners"></div><p class="picture-caption">Recording-breaking sprint!</p></div>
+      <div class="media media3"><div class="img-container"><img src="./images/Vulkan.png" id="runners"></div><p class="picture-caption">Vulkan Logo</p></div>
       <div class="words">
-        <div class="under-title">Track and Field</div>
-        <div class="blurb-caption">UCSC Men's Track and Field</div>
-        <div class="blurb"><p>As a determined walk-on my freshman year, I achieved the remarkable feat of breaking the <a href="https://goslugs.com/sports/2021/5/20/list-of-mens-track-and-field-records.aspx">UCSC</a> 100m school record. Despite injuries in my sophomore year, I'm now an upper-classman and ready to make my mark once again. With the support of our dedicated coaching staff, including the addition of a lifting coach and brand new lifting facilities this year, we hope to have a successful year.</p></div>
+        <div class="under-title">EasyVK Simplification Vulkan Tool</div>
+        <div class="blurb-caption">June 2024 - Aug 2024</div>
+        <div class="blurb"><p>Reimplemented memory management in our lab's open-source Vulkan simplification tool to use device-local buffers, enabling accurate GPU benchmarking. This facilitated efficient performance characterization of Vulkan GPU kernels and contributed to the development of the Vulkan prefix-scan (main <a href="https://github.com/ucsc-chpl/easyvk/pull/16" class="links">PR</a>).</p></div>
       </div>
     </div>
 
   </div>
 </section>
+
+
+
 
 <section id="p6"> <!-- Contact -->
   
